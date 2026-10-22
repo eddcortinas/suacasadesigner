@@ -116,7 +116,7 @@ const dataBR = (iso) => (iso ? iso.split("-").reverse().join("/") : "");
 /* ---------- Modelos (lidos do site) ---------- */
 async function carregarModelos() {
   MODELOS.push({ nome: "Cortina de tecido", grupo: "Cortinas (por metro de tecido)", preco: 0, calculo: "tecido", alturamax: 2.8, prazo: 0 });
-  ["Persiana romana", "Persiana double vision", "Persiana rolô"]
+  ["Persiana romana", "Persiana double vision", "Persiana rolô", "Roll'on tela solar"]
     .forEach((nome) => MODELOS.push({ nome, grupo: "Persianas (por m²)", preco: 0, prazo: 0 }));
   ["Cabeceira", "Sofá", "Poltrona", "Cadeira estofada", "Puff", "Reforma de estofado"]
     .forEach((nome) => MODELOS.push({ nome, grupo: "Estofados e reformas (valor fixo)", preco: 0, fixo: true }));
